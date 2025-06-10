@@ -1,10 +1,10 @@
 class Parent:
     def greet(self):
-        return "Hello from parent"
+        return "Hello from parent one"
     
 class Child(Parent):
     def child_greet(self):  
-        return super().greet() + " : Hello from child"
+        return super().greet() + " : Hello from child one"
     
 obj = Child()
 print(obj.greet())
