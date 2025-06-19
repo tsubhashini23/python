@@ -1,9 +1,11 @@
 # generator:
-# It is special function which generates one value at a time using yield, rather than computing all values at once
+# It is special function which returns an iterator and generates one value at a time using yield, rather than computing all values at once
 # It uses yield instead of return
+# It is used to handle infinite data.
 # When called, it doesn’t execute immediately — it returns a generator object.
 # Values are produced one at a time, only when asked (lazy evaluation).
 # Memory-efficient: Doesn't store entire list in memory
+# yield pauses the function and remembers its tate. The next we call, it resumes from where it left off
 
 # range function:
 # The range() function generates a sequence of numbers from start to just before stop, incrementing (or decrementing) by step.
