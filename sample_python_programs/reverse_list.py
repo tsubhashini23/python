@@ -33,9 +33,10 @@ def reverse_string(name):
     reversed_list = []
     for i in range(ln-1, -1, -1):
         reversed_list.append(new_list[i])
-    return reversed_list
+    result = print("".join(reversed_list))
+    return result
 
-print(reverse_string("dog"))
+reverse_string("dog")
 
 
 

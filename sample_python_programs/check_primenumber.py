@@ -5,4 +5,4 @@ def check_prime(n):
         if n % i == 0:
             return False  # Not a prime number
     return True # Prime Number
-print(check_prime(6))
+print(check_prime(15))
