@@ -20,7 +20,7 @@
 def second_largest(nums):
     nums = list(set(nums))
     sorted_list =sorted(nums)
-    # print(sorted_list[-2])
+    print(sorted_list[-2])
     return nums[-2]
 
 print(second_largest([4,2,6,9]))
@@ -30,6 +30,12 @@ def greet(name):
 output = greet("Subha")  # Output: Hello, Subha
 print(output)  
 
+
+# fibonacci series practice
+
+def solve_fibonacci_series(num):
+    
+    
 
 
 
