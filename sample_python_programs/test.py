@@ -58,6 +58,66 @@ def find_factorial(num):
 print(find_factorial(5))
 
 
+#Palindrome Practice
+
+def check_palindrome(name):
+    result = ""
+    for c in name:
+        result = c + result
+    if result == name:
+        return True
+    return False
+
+
+print(check_palindrome("madam"))
+
+#Break
+def test_break(num):
+    for i in range(5):
+        if i == 2:
+            break
+        print(i)
+        
+test_break(5)
+
+#Continue:
+def test_continue(num):
+    for i in range(num):
+        if i == 3:
+            continue
+        print(i)
+
+test_continue(5)
+
+#While loop
+
+def test_while(num):
+    print("While loop")
+    i = 0
+    while i < num:
+        print(i)
+        i += 1
+            
+test_while(5)  
+
+
+#For loop One
+
+def test_forloop(num):
+    print("For loop")
+    for i in range(num):
+        print(i)
+test_forloop(5)
+            
+            
+            
+            
+        
+
+    
+            
+
+
     
 
 
