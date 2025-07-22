@@ -109,3 +109,78 @@ a=10
 result = modify(a)
 print(result)      #As the function does not return anything
 print(a)
+
+#Problem_13:
+print("#Problem_13 Answer")
+print(round(4.567,2))
+
+#Problem_14:
+print("#Problem_14 Answer")
+d = {None:"value"}
+print(d[None])
+
+#Problem_15:
+print("#Problem_15 Answer")
+
+def fun(name,roll):
+    a = 10
+    print(name,roll)
+    # return a 
+    
+print(fun(name = "subha",roll = 101))
+
+#Problem_16:
+print("#Problem_16 Answer")
+
+x="i love python!"
+print(x.capitalize())
+print(x.upper())
+
+#Problem_17:
+print("#Problem_17 Answer")
+
+x = 2,3
+print(type(x))    
+#In Python, comma-separated values (without brackets) are interpreted as a tuple.creates a tuple because of the comma, not parentheses.n Python, the comma , is the key syntax for a tuple.
+
+#Problem_18:
+print("#Problem_18 Answer")
+
+def test():
+    try:
+        return "try"
+    finally:
+        return "finally"
+    
+print(test())
+#try wants to return "try"
+#But finally always executes, even if there’s a return, break, continue, or exception in the try.
+#If finally also has a return, it overrides the try's return.
+
+#Problem_19:
+print("#Problem_19 Answer")
+a=(1,2,[3,4])
+b=a[:]   # Creates full slice (shallow copy)
+b[2].append(5) # Modifies the shared list inside the tuple
+
+print(a) # (1, 2, [3, 4, 5])  
+print(b) # (1, 2, [3, 4, 5])
+print(a is b)  # False (different tuples)
+print(a==b)    # True (contents are equal)
+print(id(a))
+print(id(b))   #Ids are same
+#Python may reuse immutable objects (like small ints, short strings, tuples)
+
+
+#Problem_20:
+print("#Problem_20 Answer")
+a = [1, 2, 3, 4]
+b = a[1:3]
+print(a)  # [1, 2, 3, 4]  (unchanged)
+print(b)  # [2, 3]
+print(a is b)   # False (different list objects)
+print(a==b)
+print(id(a))
+print(id(b)) #Ids are different
+
+
