@@ -184,3 +184,10 @@ print(id(a))
 print(id(b)) #Ids are different
 
 
+#Problem_21:
+print("#Problem_21 Answer")
+
+print(math.pow(2, 3))  
+#you don’t need to import the math module to perform exponentiation because Python provides a built-in function and operator:
+print(2 ** 3)  # Output: 8
+print(pow(2, 3))

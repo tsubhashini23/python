@@ -25,5 +25,15 @@ def pattern_three(num):
                 print(" ", end = " ")   
         print("\n")    
 pattern_three(5)
+
+def pattern_four(num):
+    print("Pattern Four")
+    for i in range(num):
+        for j in range(num-i-1): 
+                    print(" ", end = "")   
+        for k in range(i+1):
+                    print("*", end = " ")
+        print("\n")    
+pattern_four(3)
         
         
