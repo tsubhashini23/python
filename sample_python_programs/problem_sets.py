@@ -191,3 +191,39 @@ print(math.pow(2, 3))
 #you don’t need to import the math module to perform exponentiation because Python provides a built-in function and operator:
 print(2 ** 3)  # Output: 8
 print(pow(2, 3))
+
+#Problem_22:
+print("#Problem_22 Answer")
+
+a=[1,2]*2 #This does not mean nested multiplication — instead, it simply repeats the list [1, 2] two times
+a[1]=3
+print(a)
+
+#Problem_23:
+print("#Problem_23 Answer")
+x=('1')
+y=('1')
+# This looks like a tuple, but it’s actually just a string in parentheses.
+# In Python:
+# Parentheses alone do not create a tuple.
+# To create a 1-element tuple, you need a comma, like: ('1',)
+# type(('1'))   ➞ <class 'str'>
+# type(('1',))  ➞ <class 'tuple'>
+z=('1',)
+print(type(x), end = " ")
+print(type(y), end = " ")
+print(type(z), end = " ")
+
+#Problem_23:
+print("#Problem_23 Answer")
+a=[1,2,3]
+b=a
+a.append(4)
+print(b)
+
+#Problem_24:
+print("#Problem_24 Answer")
+def test(a,b=2,c=3):
+    return a+b+c
+print(test(1))
+
