@@ -227,3 +227,89 @@ def test(a,b=2,c=3):
     return a+b+c
 print(test(1))
 
+#Problem_25:
+print("#Problem_25 Answer")
+
+print(round(45.8))
+print(round(6352.898,2))
+print(round(6352.898,5))
+print(round(6352.898,1))
+
+#Problem_26:
+print("#Problem_26 Answer")
+#*args allows a function to accept a variable number of positional arguments. 
+#These arguments are captured as a tuple.
+def findsum(a,b,*args):   # a = 1, b = 2, *args = (3,4,5)
+    
+    sm = 1
+    for i in args:
+        sm *= i
+    return sm
+    
+z = findsum(1,2,3,4,5)
+print(z)
+
+
+#Interning is an optimization technique used by Python where identical immutable objects (like strings or small integers) are stored only once in memory to save space and improve performance.
+#Problem_27:
+print("#Problem_27 Answer")
+#In Python, immutable objects like strings may be interned or cached for optimization.
+#So, when you assign s = "abcd" and a = "abcd", Python may reuse the same memory location for both.
+#Hence, id(s) == id(a) is likely True.
+s = "abcd"
+a= "abcd"
+
+if id(s) == id(a):
+    print("They are same")
+else:
+    print("They are not the same")
+    
+#Problem_28:
+print("#Problem_28 Answer")
+#If the string were dynamically created (e.g., using ''.join([...])), interning may not apply, and you might get "They are not the same".
+s = "abcd"
+a= ''.join(['a', 'b', 'c', 'd']) 
+
+if id(s) == id(a):
+    print("They are same")
+else:
+    print("They are not the same")
+    
+#Problem_29:
+print("#Problem_29 Answer")
+s = "abcd"
+a= "efgh"
+
+if id(s) == id(a):
+    print("They are same")
+else:
+    print("They are not the same")
+    
+#Problem_30:
+print("#Problem_30 Answer")
+#s and a look the same, but they are two separate list objects created in memory.
+#Lists are mutable, and Python never interns mutable objects.
+s = [1,2,3]
+a= [1,2,3]
+
+if id(s) == id(a):
+    print("They are same")
+else:
+    print("They are not the same")
+    
+# #Problem_31:
+# print("#Problem_31 Answer")
+# #Strings are immutable — once a string is created, you cannot change its individual characters. So error will occur
+# s="abcd"
+# s[0]='c'
+# print(s)
+
+#Problem_32:
+print("#Problem_32 Answer")
+#To change the first character to 'c', you can create a new string like this
+#s[1:] gives the substring starting from index 1 (i.e., 'bcd')
+#'c' + s[1:] → 'c' + 'bcd' → 'cbcd'
+#Now s is updated to this new string 'cbcd'
+s = "abcd"
+s = 'c' + s[1:]  # Replace first character with 'c'
+print(s)
