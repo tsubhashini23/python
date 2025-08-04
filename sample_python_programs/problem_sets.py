@@ -313,3 +313,39 @@ print("#Problem_32 Answer")
 s = "abcd"
 s = 'c' + s[1:]  # Replace first character with 'c'
 print(s)
+
+
+#Problem_33:
+print("#Problem_33 Answer")
+import aiohttp
+import asyncio
+
+async def fetch_url(URL):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(URL) as response:
+            return response.status
+
+status_code = asyncio.run(fetch_url("https://example.com"))
+print("Status code:", status_code)
+
+#Problem_34:
+print("#Problem_34 Answer")
+class ZeroDenominatorError(ZeroDivisionError):
+    pass
+    try:
+        a = 10
+        b = 5
+        if(b==0):
+            raise ZeroDenominatorError()
+        c = a/b
+    except ZeroDivisionError:
+        print('Zero Division Error occured',end= '')
+
+    except ZeroDenominatorError:
+        print('Zero Denominator Error occured',end ='')
+    else:
+        print('else works')
+
+
+z = ZeroDenominatorError()
+
