@@ -330,20 +330,23 @@ print("Status code:", status_code)
 
 #Problem_34:
 print("#Problem_34 Answer")
+#Using two except blocks allows you to:
+#Handle general ZeroDivisionError
+#Handle your specific ZeroDenominatorError differently
+#Due to the "except" order, if ZeroDenominatorError is raised, it will get caught by the first one (the general ZeroDivisionError), and the second one is never reached.
 class ZeroDenominatorError(ZeroDivisionError):
     pass
-    try:
+try:
         a = 10
-        b = 5
+        b = 0
         if(b==0):
             raise ZeroDenominatorError()
         c = a/b
-    except ZeroDivisionError:
-        print('Zero Division Error occured',end= '')
-
-    except ZeroDenominatorError:
+except ZeroDenominatorError:
         print('Zero Denominator Error occured',end ='')
-    else:
+except ZeroDivisionError:
+        print('Zero Division Error occured',end= '')
+else:
         print('else works')
 
 
