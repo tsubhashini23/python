@@ -349,6 +349,20 @@ except ZeroDivisionError:
 else:
         print('else works')
 
+ZeroDenominatorError()
 
-z = ZeroDenominatorError()
+#Problem_35:
+print("#Problem_35 Answer")
+def decorator(func):
+    def wrapper():
+        print("Before")
+        func()
+        print("After")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello")
+    
+say_hello()
 
