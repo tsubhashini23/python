@@ -366,3 +366,24 @@ def say_hello():
     
 say_hello()
 
+#Problem_36:
+print("#Problem_36 Answer")
+#If self.name = "Rohan" and self.age = 60, no matter what you pass when creating a Student object, it will always print Rohan 60.
+
+class Student:
+    def __init__(self,name,age):
+        self.name ="Rohan"
+        self.age = 60
+        
+    def print_student_details(self):
+        print(self.name, end= " ")
+        print(self.age)
+        
+s=Student("sidharth", 20)
+s.print_student_details()
+
+#Problem_37:
+print("#Problem_37 Answer")
+print("The sum of {0} and {1} is {})".format(2,10,12))
+
+        
