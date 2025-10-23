@@ -26,7 +26,7 @@ print(f" modified color using obj1: {obj1.color}")
 print(f"color remains same for obj2 as modification happened using obj1: {obj2.color}")
 
 Bird.color = "Red"
-print(f"Color not modified as Python created an instance variable color for obj1: {obj1.color}")
+print(f"Color not modified as the value of variable color changed using instance obj1: {obj1.color}")
 print(f"color changed only for obj2 as it is still using class-level color: {obj2.color}")
 
 print(obj1.__dict__)  # {'name': 'Parrot', 'color': 'multicolor'}

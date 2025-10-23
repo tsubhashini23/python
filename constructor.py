@@ -1,5 +1,5 @@
 class Parent():
-    def greet(sef):
+    def greet(self):
         return "Hello parent"
     
     def __init__(self):

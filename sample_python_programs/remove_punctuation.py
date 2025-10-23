@@ -12,3 +12,13 @@ def remove_punctuation(name):
     return result
 
 remove_punctuation("s,ubha")
+
+
+name = "madhu,sudhan"
+
+punctuation_marks = ",.';:"
+
+for c in name:
+    if c in punctuation_marks:
+        new_name = name.pop(c)
+print(new_name)

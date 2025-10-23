@@ -16,3 +16,13 @@ def is_palindrome(m):
     return m == m[::-1]
 
 print(is_palindrome("Race Car"))
+
+
+name = "pop pop"
+new_name = name.lower().replace(" ", "")
+reversed_name = new_name[::-1]
+
+if new_name == reversed_name:
+    print(f"{name} is a palindrome")
+else:
+    print(f"{name} is not a palindrome")

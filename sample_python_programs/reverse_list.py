@@ -9,7 +9,7 @@ def reverse_list(list):
                 reversed_list.append(list[i])
         return reversed_list
     
-print(reverse_list([30,2,3,4,5,6]))
+print(reverse_list([30,2,3,4,5, 5,6]))
 
 #Reverse using EXTENDED SLICING method: list[::-1] (Start from the end of the sequence and move backward by 1 step until the beginning.”)
 # start → not given → defaults to end of list if step is negative
