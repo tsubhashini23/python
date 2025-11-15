@@ -4,9 +4,9 @@ def sorting(new_list):
     ln = len(new_list)
     # sorted_list = []
     for i in range(ln):
-        for j in range(0, ln-i-1):
-            if new_list[j] > new_list[j+1]:
-                new_list[j], new_list[j+1] =  new_list[j+1], new_list[j]
+        for j in range(i+1, ln):
+            if new_list[i] > new_list[j]:
+                new_list[i], new_list[j] =  new_list[j], new_list[i]
                 # print (new_list)
     return new_list
 
