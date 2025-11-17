@@ -13,11 +13,11 @@
 # print(new_numbers_list)
 #
 #
-# #Use of join
-#
-# fruit_list = ['apple','banana','orange']
-# print(",".join(fruit_list))
-# print(type(",".join(fruit_list)))
+#Use of join
+
+fruit_list = ['apple','banana','orange']
+print(",".join(fruit_list))
+print(type(",".join(fruit_list)))
 #
 #
 # # Set operations
